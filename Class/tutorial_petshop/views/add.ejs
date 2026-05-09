@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create New Pet</title>
+    <link rel="stylesheet" href="../css/add.css">
+</head>
+<body>
+    <h1>Create New Pet</h1>
+    
+    <form action="/add" method="POST" enctype="multipart/form-data"><!--Bắt buộc phải thêm enctype="multipart/form-data" để gửi file.-->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value="">
+        <label for="price">Price ($):</label>
+        <input type="number" id="price" name="price" value="">
+        <label for="age">Age (month):</label>
+        <input type="number" id="age" name="age" value="">
+        <label for="image">Image URL/Path:</label>
+        <input type="file" id="image" name="image" value="">
+        <label for="description">Description:</label>
+        <input type="text" id="description" name="description" value="">
+        
+        <button type="submit">Add Pet</button>
+    </form>
+    <a href="/">Back to Index</a>
+</body>
+</html>

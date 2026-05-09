@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pet Shop - Index</title>
+    <link rel="stylesheet" href="../css/list.css">
+</head>
+<body>
+    <h1>Pet Shop</h1>
+    <h2>Filter pet by age</h2>
+    <form action="/" method="GET" class="filter-form">
+        <label for="FromAge">FromAge:</label>
+        <input type="number"  name="FromAge" placeholder="Enter from Age" value="" required>
+        <label for="ToAge">ToAge:</label>
+        <input type="number"  name="ToAge" placeholder="Enter to Age" value="" required>
+        <button type="submit" class="btn-filter">Filter</button>
+    </form>
+    <h2>Pet List</h2>
+    <a href="/add"><button class="btn btn-create">Create a new Pet</button></a>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Age</th>
+                <th>Description</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Trong Controller (productController.js),đã truyền dữ liệu danh sách thú cưng sang view với tên biến là pets (số nhiều): -->
+           
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <a href=""><button class="btn-detail">Detail</button></a>
+                    </td>
+                </tr>
+          
+        </tbody>
+    </table>
+</body>
+</html>

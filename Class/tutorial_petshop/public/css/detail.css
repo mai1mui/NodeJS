@@ -1,0 +1,120 @@
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+        background: #f6f8fa;
+        padding: 40px;
+        color: #333;
+        animation: fadeIn 0.6s ease-in-out;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 34px;
+        margin-bottom: 25px;
+        color: #2b2d42;
+        font-weight: 700;
+        animation: slideDown 0.6s ease;
+    }
+
+    /* Pet Detail Layout */
+    .pet-detail-container {
+        width: 850px;
+        margin: 0 auto;
+        background: #ffffff;
+        padding: 25px;
+        border-radius: 14px;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+        display: flex;
+        gap: 30px;
+        animation: fadeUp 0.6s ease;
+    }
+
+    img {
+        border-radius: 12px;
+        width: 380px;
+        height: auto;
+        object-fit: cover;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+    }
+
+    .info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .info p {
+        font-size: 18px;
+        margin-bottom: 12px;
+        color: #333;
+    }
+
+    .info strong {
+        color: #2b2d42;
+    }
+
+    /* Buttons */
+    .btn-delete {
+        padding: 12px;
+        background: #e74c3c;
+        border: none;
+        color: white;
+        font-weight: 700;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: 0.25s;
+        margin-top: 15px;
+        width: 150px;
+    }
+
+    .btn-delete:hover {
+        background: #c0392b;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    .btn-back {
+        padding: 12px;
+        background: #4a90e2;
+        border: none;
+        color: white;
+        font-weight: 700;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: 0.25s;
+        margin-top: 10px;
+        width: 150px;
+    }
+
+    .btn-back:hover {
+        background: #357abd;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    /* ----- Animations ----- */
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+
+    @keyframes fadeUp {
+        from { opacity: 0; transform: translateY(20px); }
+        to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideDown {
+        from { opacity: 0; transform: translateY(-20px); }
+        to   { opacity: 1; transform: translateY(0); }
+    }

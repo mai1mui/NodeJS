@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Update Pet Information</title>
+    <link rel="stylesheet" href="../css/edit.css">
+</head>
+
+<body>
+    <h1>Update Pet Information</h1>
+
+    <form action="" method="POST" enctype="multipart/form-data">
+        <!--Bắt buộc phải thêm enctype="multipart/form-data" để gửi file.-->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value="">
+        <label for="price">Price ($):</label>
+        <input type="number" id="price" name="price" value="">
+        <label for="age">Age (month):</label>
+        <input type="number" id="age" name="age" required>
+        <label>Current Image:</label>
+            <img src="" alt=""
+                style="max-width: 100px; display: block; margin-bottom: 10px;">
+                    <label for="image">Upload New Image (Optional):</label>
+                    <input type="file" id="image" name="image" accept="image/*">
+                    <label for="description">Description:</label>
+                    <input type="textarea" id="description" name="description">
+                    <button type="submit">Save</button>
+    </form>
+    <a href="/">Back to Index</a>
+</body>
+
+</html>
